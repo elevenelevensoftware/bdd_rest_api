@@ -158,23 +158,6 @@ server.route({
   }
 });
 
-//server.route({
-//  method: 'GET',
-//  path: '/products/{productline}/options/{productoption}',
-//  handler: function(request, response){
-//    var clusterid = request.params.clusterid;
-//    client.execute('SELECT clusterid, productline, productoption, similarity FROM similarity where clusterid = ? AND productline = ? ORDER BY clusterid, productline, similarity DESC LIMIT 1',[clusterid, productline],
-//       function(err, result){
-//        if(err){
-//          console.log('ERROR: accessing resource GET /products/{productline}/options/{productoption}'+ err.message);
-//        }else{
-//          response(result);
-//         }
-//       }
-//    );
-//  }
-//});
-
 server.start(function(){
   console.log('Server started at: ', server.info.uri + ' and ready to query the cluster.');
 });
