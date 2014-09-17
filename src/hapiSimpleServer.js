@@ -4,8 +4,6 @@ var cql = require('node-cassandra-cql');
 var server = new Hapi.Server('localhost', 8080);
 var client = new cql.Client({hosts: ['c1'], keyspace: 'query_layer_test'}); //
 
-
-
 /*
  * good is a process monitor for the following types of events:
 
