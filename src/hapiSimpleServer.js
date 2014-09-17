@@ -4,9 +4,7 @@ var cql = require('node-cassandra-cql');
 var server = new Hapi.Server('localhost', 8080);
 var client = new cql.Client({hosts: ['c1'], keyspace: 'query_layer_test'}); //
 
-// TODO: connect application to Rob's cassandra cluster - This is done
-// TODO: put the cassie logic into an API call
-// TODO: use log stats for a dashboard UI?
+
 
 /*
  * good is a process monitor for the following types of events:
